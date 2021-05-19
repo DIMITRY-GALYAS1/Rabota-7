@@ -9,9 +9,7 @@ if __name__ == '__main__':
     D = tuple([random.randint(20, 30) for i in range(7)])
     V = tuple([random.randint(20, 30) for i in range(7)])
     G = ()
-    i = 0
     for (u, d, v) in zip(U, D, V):
-        (Z, ) = ((U[i]+D[i]+V[i])/3, )
+        (Z, ) = ((u+d+v)/3, )
         G = G + (Z, )
-        i += 1
     print("Среднее значение температуры по дням недели: ", G)
