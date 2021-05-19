@@ -10,7 +10,7 @@ if __name__ == '__main__':
     V = tuple([random.randint(20, 30) for i in range(7)])
     G = ()
     i = 0
-    while i < 7:
+    for (u, d, v) in zip(U, D, V):
         (Z, ) = ((U[i]+D[i]+V[i])/3, )
         G = G + (Z, )
         i += 1
